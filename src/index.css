@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --bordeaux: #651926;
+  --coffee: #0F0406;
+  --rosy: #95929C;
+  --mauve: #462831;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--coffee);
+  color: var(--rosy);
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}

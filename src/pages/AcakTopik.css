@@ -1,0 +1,787 @@
+.halaman-topik {
+  min-height: 100vh;
+  padding: 25px 20px 55px;
+  background: #E2DDE3;
+  color: #0F0406;
+}
+
+.header-topik {
+  position: relative;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-topik h1 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.header-topik h1 span {
+  color: #651926;
+}
+
+.tombol-kembali-topik,
+.tombol-home-topik {
+  position: absolute;
+  top: 0;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: #462831;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 18px rgba(15,4,6,.08);
+  transition: .2s;
+}
+
+.tombol-kembali-topik {
+  left: 0;
+}
+
+.tombol-home-topik {
+  right: 0;
+}
+
+.tombol-kembali-topik:hover,
+.tombol-home-topik:hover {
+  background: #462831;
+  color: #E2DDE3;
+  transform: translateY(-2px);
+}
+
+.tombol-kembali-topik svg,
+.tombol-home-topik svg {
+  width: 20px;
+  height: 20px;
+}
+
+.hero-topik {
+  margin-top: 45px;
+  text-align: center;
+}
+
+.hero-topik h2 {
+  margin: 0;
+  color: #0F0406;
+  font-size: 46px;
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.hero-topik h2 span {
+  color: #651926;
+}
+
+.hero-topik p {
+  max-width: 540px;
+  margin: 20px auto 0;
+  color: #462831;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.hero-topik::after {
+  content: "";
+  display: block;
+  width: 61px;
+  height: 5px;
+  margin: 22px auto 0;
+  border-radius: 20px;
+  background: #651926;
+}
+
+.form-topik {
+  margin-top: 25px;
+  padding: 25px;
+  border-radius: 25px;
+  background: #FFFFFF;
+  box-shadow: 0 8px 25px rgba(15,4,6,.07);
+}
+
+.baris-input-topik {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.baris-input-topik:last-child {
+  margin-bottom: 0;
+}
+
+.label-input-topik {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding-top: 7px;
+}
+
+.label-input-topik strong {
+  padding-top: 9px;
+  color: #0F0406;
+  font-size: 16px;
+}
+
+.ikon-input-topik {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #E2DDE3;
+  color: #651926;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ikon-input-topik.biru,
+.ikon-input-topik.pink {
+  background: #E2DDE3;
+}
+
+.ikon-input-topik svg {
+  width: 24px;
+  height: 24px;
+}
+
+.dropdown-topik {
+  position: relative;
+  width: 100%;
+}
+
+.tombol-dropdown-topik {
+  width: 100%;
+  height: 58px;
+  padding: 0 16px;
+  border: 1px solid #95929C;
+  border-radius: 15px;
+  background: #FFFFFF;
+  color: #0F0406;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: inherit;
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.tombol-dropdown-topik:hover,
+.tombol-dropdown-topik.aktif {
+  border-color: #651926;
+}
+
+.tombol-dropdown-topik svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  transition: .2s;
+}
+
+.tombol-dropdown-topik svg.putar {
+  transform: rotate(180deg);
+}
+
+.menu-dropdown-topik {
+  position: absolute;
+  z-index: 50;
+  top: calc(100% + 6px);
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #95929C;
+  border-radius: 15px;
+  background: #FFFFFF;
+  box-shadow: 0 10px 25px rgba(15,4,6,.12);
+}
+
+.menu-dropdown-topik button {
+  width: 100%;
+  height: 43px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: #0F0406;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: inherit;
+  font-size: 15px;
+  text-align: left;
+  cursor: pointer;
+  transition: .15s;
+}
+
+.menu-dropdown-topik button:hover {
+  background: #E2DDE3;
+}
+
+.menu-dropdown-topik button.dipilih {
+  background: transparent;
+  color: #651926;
+  font-weight: 700;
+}
+
+.menu-dropdown-topik button svg {
+  width: 17px;
+  height: 17px;
+  color: #651926;
+}
+
+.kolom-input-topik textarea {
+  width: 100%;
+  height: 140px;
+  padding: 14px;
+  border: 1px solid #95929C;
+  border-radius: 15px;
+  outline: none;
+  resize: none;
+  background: #FFFFFF;
+  color: #0F0406;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: .2s;
+}
+
+.kolom-input-topik textarea::placeholder {
+  color: #95929C;
+}
+
+.kolom-input-topik textarea:focus {
+  border-color: #651926;
+  box-shadow: 0 0 0 3px rgba(101,25,38,.1);
+}
+
+.kolom-input-topik small {
+  display: block;
+  margin-top: 7px;
+  color: #95929C;
+  font-size: 12px;
+}
+
+.tombol-spin-topik {
+  width: 100%;
+  height: 58px;
+  margin-top: 22px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 17px;
+  background: #651926;
+  color: #E2DDE3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 17px;
+  font-weight: 800;
+  transition: .2s;
+}
+
+.tombol-spin-topik:hover {
+  background: #0F0406;
+  transform: translateY(-2px);
+}
+
+.tombol-spin-topik svg,
+.tombol-spin-lagi svg {
+  width: 21px;
+  height: 21px;
+}
+
+.hasil-topik {
+  margin-top: 28px;
+  padding: 22px;
+  border-radius: 25px;
+  background: #462831;
+}
+
+.judul-hasil-topik {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.judul-hasil-topik h2 {
+  margin: 0;
+  color: #E2DDE3;
+  font-size: 24px;
+}
+
+.judul-hasil-topik span {
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #95929C;
+  color: #0F0406;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.kartu-hasil-topik {
+  margin-bottom: 10px;
+  padding: 18px;
+  border-radius: 18px;
+  background: #E2DDE3;
+}
+
+.kartu-hasil-topik:last-of-type {
+  margin-bottom: 0;
+}
+
+.isi-hasil-topik p {
+  display: grid;
+  grid-template-columns: 90px 15px minmax(0,1fr);
+  margin: 8px 0;
+  color: #0F0406;
+}
+
+.isi-hasil-topik p span {
+  color: #95929C;
+  font-weight: 700;
+}
+
+.isi-hasil-topik p span::after {
+  content: ":";
+  float: right;
+  color: #462831;
+}
+
+.isi-hasil-topik p b {
+  grid-column: 3;
+  overflow-wrap: anywhere;
+}
+
+.tombol-spin-lagi,
+.tombol-reset-topik {
+  width: 100%;
+  height: 52px;
+  margin-top: 12px;
+  border-radius: 16px;
+  font-size: 15px;
+  font-weight: 800;
+  transition: .2s;
+}
+
+.tombol-spin-lagi {
+  border: 2px solid #95929C;
+  background: transparent;
+  color: #E2DDE3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.tombol-spin-lagi:hover {
+  background: #E2DDE3;
+  color: #462831;
+}
+
+.tombol-reset-topik {
+  border: 0;
+  background: #651926;
+  color: #E2DDE3;
+}
+
+.tombol-reset-topik:hover {
+  background: #0F0406;
+}
+
+@media (max-width: 600px) {
+  .halaman-topik {
+    padding: 20px 14px 45px;
+  }
+
+  .header-topik {
+    height: 44px;
+  }
+
+  .tombol-kembali-topik,
+  .tombol-home-topik {
+    width: 42px;
+    height: 42px;
+  }
+
+  .tombol-kembali-topik svg,
+  .tombol-home-topik svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .header-topik h1 {
+    font-size: 22px;
+  }
+
+  .hero-topik {
+    margin-top: 22px;
+    padding: 0 10px;
+  }
+
+  .hero-topik h2 {
+    font-size: 34px;
+  }
+
+  .hero-topik p {
+    font-size: 14px;
+  }
+
+  .form-topik {
+    margin-top: 22px;
+    padding: 17px;
+  }
+
+  .baris-input-topik {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .label-input-topik {
+    padding-top: 0;
+    align-items: center;
+  }
+
+  .label-input-topik strong {
+    padding-top: 0;
+  }
+
+  .kolom-input-topik textarea {
+    height: 125px;
+  }
+
+  .hasil-topik {
+    padding: 17px;
+  }
+
+  .isi-hasil-topik p {
+    grid-template-columns: 75px 15px minmax(0,1fr);
+  }
+}
+.aksi-topik {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.aksi-topik button {
+  width: 100%;
+  height: 52px;
+  border-radius: 16px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.aksi-topik button svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.tombol-simpan-topik {
+  border: 0;
+  background: #651926;
+  color: #E2DDE3;
+}
+
+.tombol-simpan-topik:hover {
+  background: #0F0406;
+  transform: translateY(-2px);
+}
+
+.aksi-topik .tombol-spin-lagi {
+  margin-top: 0;
+  border: 2px solid #95929C;
+  background: transparent;
+  color: #E2DDE3;
+}
+
+.aksi-topik .tombol-spin-lagi:hover {
+  background: #E2DDE3;
+  color: #462831;
+}
+
+.aksi-topik .tombol-reset-topik {
+  margin-top: 0;
+  border: 0;
+  background: #651926;
+  color: #E2DDE3;
+}
+
+.aksi-topik .tombol-reset-topik:hover {
+  background: #0F0406;
+}
+
+@media (max-width: 600px) {
+  .aksi-topik {
+    grid-template-columns: 1fr;
+  }
+}
+
+.overlay-pesan-topik {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  padding: 20px;
+  background: rgba(15,4,6,.58);
+  backdrop-filter: blur(7px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-pesan-topik {
+  width: min(380px,100%);
+  padding: 28px;
+  border-radius: 25px;
+  background: #E2DDE3;
+  color: #0F0406;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(15,4,6,.3);
+  animation: popupTopikMasuk .2s ease;
+}
+
+.ikon-pesan-topik {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #651926;
+  color: #E2DDE3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.popup-pesan-topik h3 {
+  margin: 0;
+  color: #0F0406;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.popup-pesan-topik p {
+  margin: 10px 0 22px;
+  color: #462831;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.popup-pesan-topik button {
+  width: 100%;
+  height: 48px;
+  border: 0;
+  border-radius: 15px;
+  background: #651926;
+  color: #E2DDE3;
+  font-size: 15px;
+  font-weight: 800;
+  transition: .2s;
+}
+
+.popup-pesan-topik button:hover {
+  background: #462831;
+  transform: translateY(-1px);
+}
+
+@keyframes popupTopikMasuk {
+  from {
+    opacity: 0;
+    transform: scale(.94) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .popup-pesan-topik {
+    padding: 24px;
+    border-radius: 22px;
+  }
+}
+.konten-topik {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .halaman-topik {
+    padding: 45px 25px 70px;
+  }
+
+  .konten-topik {
+    width: 100%;
+  }
+
+  .hero-topik h2 {
+    font-size: 50px;
+  }
+
+  .form-topik {
+    padding: 28px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .halaman-topik {
+    padding: 35px 22px 60px;
+  }
+
+  .konten-topik {
+    width: 100%;
+  }
+
+  .hero-topik h2 {
+    font-size: 43px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .halaman-topik {
+    padding: 30px 18px 55px;
+  }
+
+  .konten-topik {
+    width: 100%;
+  }
+
+  .hero-topik {
+    margin-top: 30px;
+  }
+
+  .hero-topik h2 {
+    font-size: 40px;
+  }
+
+  .baris-input-topik {
+    grid-template-columns: 190px 1fr;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .halaman-topik {
+    padding: 20px 14px 40px;
+  }
+
+  .konten-topik {
+    width: 100%;
+  }
+
+  .hero-topik {
+    margin-top: 24px;
+    padding: 0 5px;
+  }
+
+  .hero-topik h2 {
+    font-size: 34px;
+  }
+
+  .hero-topik p {
+    font-size: 14px;
+  }
+
+  .baris-input-topik {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .form-topik {
+    padding: 17px;
+  }
+
+  .aksi-topik {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .halaman-topik {
+    padding: 20px 12px 40px;
+  }
+
+  .konten-topik {
+    width: 100%;
+  }
+
+  .header-topik h1 {
+    font-size: 20px;
+  }
+
+  .tombol-kembali-topik,
+  .tombol-home-topik {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero-topik h2 {
+    font-size: 30px;
+  }
+
+  .hero-topik p {
+    font-size: 14px;
+  }
+
+  .hero-topik p br {
+    display: none;
+  }
+
+  .form-topik {
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  .label-input-topik {
+    gap: 10px;
+  }
+
+  .ikon-input-topik {
+    width: 44px;
+    height: 44px;
+    border-radius: 13px;
+  }
+
+  .label-input-topik strong {
+    font-size: 14px;
+  }
+
+  .tombol-dropdown-topik {
+    height: 52px;
+    font-size: 14px;
+  }
+
+  .kolom-input-topik textarea {
+    height: 115px;
+    font-size: 14px;
+  }
+
+  .aksi-topik {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+} 
