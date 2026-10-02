@@ -21,7 +21,7 @@ function CariIdeMateri() {
     setHasil([]);
 
     try {
-      const response = await fetch("http://localhost:5000/ideas", {
+      const response = await fetch("/api/ideas", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
